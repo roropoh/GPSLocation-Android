@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tcptesting.app.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client"
+        android:id="@+id/bClient"
+        android:layout_marginTop="126dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server"
+        android:id="@+id/bServer"
+        android:layout_below="@+id/portNumActivityMain"
+        android:layout_alignRight="@+id/bClient"
+        android:layout_alignEnd="@+id/bClient" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portNumActivityMain"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/bServer"
+        android:layout_alignStart="@+id/bServer"
+        android:layout_alignRight="@+id/bServer"
+        android:layout_alignEnd="@+id/bServer"
+        android:text="7700"
+        android:hint="Port"
+        android:inputType="number"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

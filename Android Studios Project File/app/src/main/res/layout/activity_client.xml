@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:windowSoftInputMode="stateHidden">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/clientStatusTextView"
+        android:layout_above="@+id/IP_Address"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.26"
+        android:singleLine="false"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:isScrollContainer="false" />
+
+    <EditText
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:layout_gravity="center_horizontal"
+        android:hint="Name"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipText"
+        android:layout_gravity="center_horizontal"
+        android:hint="IP Address"
+        android:gravity="center_horizontal"
+        android:ellipsize="start"
+        android:text=""
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/portText"
+        android:layout_gravity="center_horizontal"
+        android:hint="Port Number"
+        android:textAlignment="center"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:text="7700"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/bConnect"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:inputType="textNoSuggestions"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Coordinates"
+        android:id="@+id/bSendCoordinates"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:inputType="textNoSuggestions"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/bDisconnect"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+</LinearLayout>
